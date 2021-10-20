@@ -9,7 +9,7 @@ CREATE TABLE department(
 	department_id		TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     department_name		VARCHAR(50) NOT NULL UNIQUE KEY CHECK (length(department_name)>1)
 );
-CREATE TABLE `position`(
+CREATE TABLE position (
 	position_id			TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     position_name		VARCHAR(30) NOT NULL UNIQUE KEY CHECK (length(position_name)>=1)
 );
@@ -106,18 +106,20 @@ VALUES					('Dev'),
 
 -- Account table--
 INSERT INTO `account` 
-(email, 				username, 			fullname, 			department_id, 			position_id)
+(email, 							username, 							fullname, 					department_id, 			position_id)
 VALUES				
-('acieccmi@vti.com'	,	'acieccmi', 		'Học viên 1', 				1,					2),
-('abcxyz@vti.com'	,	'abcxyz', 			'Học viên 2',				2,					4),
-('acbzyt@vti.com'	,	'acbceef',			'Học viên 3',				3,					2),
-('dhdeudhuh@vti.com',	'edede',			'Học viên 4',				5,					2),
-('33fg3ff3f@vti.com',	'fdfc4gf',			'Học viên 5',				3,					5),
-('f44ghf4@vti.com'	,	'frbtmk',			'Học viên 6',				1,					4),
-('4fbnmytrfdcvbn'	,	'gtrdcvg',			'Học viên 7',				3,					4),
-('45tgdertg@vti.com',	'4567898765',		'Học viên 8',				3,					5),
-('5rfde4rf@vti.com'	,	'r5gf445',			'Học viên 9',				3,					1),
-('4r4fb@vti.com'	,	'4g4g4g4g4g',		'Học viên 10',				5,					4);
+('phamvanthuog70@gmail.com'		,	'phamvanthuog70'		, 		'Phạm Văn Thượng'		, 				1,					2),
+('vungoanmori@gmail.com'		,	'vungoanmori'			, 		'Vũ Thị Ngoan'			,				2,					4),
+('Starlee9009@gmail.com'		,	'Starlee9009'			,		'Nguyễn Thuỵ Kiều Liên'	,				3,					2),
+('mrledung.imjapan@gmail.com'	,	'mrledung.imjapan'		,		'Lê Trí Dũng'			,				5,					2),
+('chuongnguyen.dc@gmail.com'	,	'chuongnguyen.dc'		,		'Nguyễn Minh Chương'	,				3,					5),
+('thinh.ithp@gmail.com'			,	'thinh.ithp'			,		'Nguyễn Quang Thịnh'	,				1,					4),
+('chocolateTran2805@gmail.com'	,	'chocolateTran2805'		,		'Trần Thúy An'			,				3,					4),
+('704.kimthanh@gmail.com'		,	'704.kimthanh'			,		'Nguyễn Thị Kim Thanh'	,				3,					5),
+('phamvansam0@gmail.com'		,	'phamvansam0'			,		'Phạm Văn Sâm'			,				3,					1),
+('vinhjp996@gmail.com'			,	'vinhjp996'				,		'Nguyễn Trường Vinh'	,				5,					4),
+('bao.lengoc98@gmail.com'		,	'bao.lengoc98'			,		'Lê Ngọc Bảo'			,				5,					4),
+('hanakin8668@gmail.com'		,	'hanakin8668'			,		'Trần Hồng Việt'		,				5,					4);
 
 -- Group table--
 INSERT INTO `group` (group_name, creator_id)
